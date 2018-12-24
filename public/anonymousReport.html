@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127982154-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127982154-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Technology conference located in Huntsville Alabama focused on highlighting diversity in the tech industry">
+    <meta name="author" content="Women Who Code Huntsville">
+
+    <title>WeRockIT Technology Conference</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery-easing/jquery.easing.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB07JqijHmGDtlGrR4mxJ7FWpGdKuXqGG4",
+            authDomain: "werockit-conf-website.firebaseapp.com",
+            databaseURL: "https://werockit-conf-website.firebaseio.com",
+            projectId: "werockit-conf-website",
+            storageBucket: "werockit-conf-website.appspot.com",
+            messagingSenderId: "801649081419"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <img src='img/WeRockIT_WWCgray.png' height='100' width='auto' class="img-responsive"/>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="sponsor.html">Sponsor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="volunteer.html">Volunteer</a>
+                </li>
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="#longVersion">CoC</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead bg-wwc-teal">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-md-10 my-auto mx-auto">
+                <div class="text-center">
+                    <h1>Anonymous CoC Violation Report</h1>
+                    <hr/>
+                    <p>
+                        WeRockIT Conf takes these reports very seriously.
+                        We can't follow up an anonymous report with you directly, but we will fully investigate it and
+                        take
+                        whatever action is necessary to prevent a recurrence.
+                    </p>
+                </div>
+                <div>
+                    <p>Please include as much of the following information as you feel comfortable sharing:</p>
+                    <ul>
+                        <li>Identifying information (name/badge number) of the participant</li>
+                        <li>The time you observed the incident</li>
+                        <li>The behavior that was in violation</li>
+                        <li>The circumstances surrounding the incident</li>
+                        <li>Other people involved in the incident</li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <a href="#report" class="btn btn-outline btn-xl js-scroll-trigger">Submit Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="report" class="bg-secondary">
+    <div class="container">
+        <h2>Code of Conduct Violation Report</h2>
+        <div class="row">
+            <div class="col-md-10 mx-auto ">
+                <form id="anonymousReportForm">
+                    <div class="form-group">
+                        <label for="description">Description of Incident</label>
+                        <textarea type = "text" class="form-control" id="description" name="description" rows = "3"></textarea>
+                    </div>
+                    <button type="submit" id = "submit-form" class="btn btn-dark btn-xl">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="anonymousReportFormReceived" style="display: none;">
+            <h3>Thank you for reporting this incident. A WeRockIT Conf Board member will be sure to address the issue
+                promptly.</h3>
+        </div>
+        <div id="anonymousReportFormError" style="display: none;">
+            <h3>Uh oh! Something went wrong. Please email us directly at <a href='mailto:werockitconf@gmail.com'>werockitconf@gmail.com</a>
+                and someone will get back with you soon.</h3>
+        </div>
+    </div>
+</section>
+
+<section id="longVersion" class="section-sm-padding">
+    <div class="container">
+        <h2>Contact Info &amp; Resources</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Conference Organizers</h3>
+                <p>
+                    <a href="mailto:werockitconf@gmail.com">werockitconf@gmail.com</a><br/>
+                    <a href="tel:+12566562302">(256) 656-2302</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Local Law Enforcement</h3>
+                <strong>Huntsville Police Department</strong><br/>
+                2110 Clinton Ave W, Huntsville, AL 35805<br/>
+                <a href="tel:+12564277009">(256) 427-7009</a><br/><br/>
+
+                <strong>Madison City Police Department</strong><br/>
+                100 Hughes Rd, Madison, AL 35758<br/>
+                <a href="tel:+12567227190">(256) 722-7190</a><br/><br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Local Sexual Assualt Hotline</h3>
+                <strong>Crisis Services of North Alabama:</strong><br/>
+                <a href="tel:+1-800-691-8426">1-800-691-8426</a><br/>
+                <a href="tel:+12567164052">(256) 716-4052</a><br/><br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Local Medical Care</h3>
+                <strong>American Family Care Madison</strong><br/>
+                7559 US-72, Madison, AL 35758<br/>
+                <a href="tel:+12564140488">(256) 414-0488</a><br/>
+
+                <strong>Madison Hospital Emergency Room</strong><br/>
+                8375 Hwy 72 W, Madison, AL 35758<br/>
+                <a href="tel:+12562652012">(256) 265-2012</a><br/><br/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact bg-primary" id="contact">
+    <div class="container">
+        <h2>We
+            <i class="fa fa-heart"></i>
+            new friends!</h2>
+        <ul class="list-inline list-social">
+            <li class="list-inline-item social-twitter">
+                <a href="https://twitter.com/werockitconf?lang=en" target="Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item social-facebook">
+                <a href="https://www.facebook.com/werockitconf" target="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-inline-item social-instagram">
+                <a href="https://www.instagram.com/werockitconf/" target="Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; WeRockIT Conf 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="codeOfConduct.html">Code of Conduct</a>
+            </li>
+            <!--<li class="list-inline-item">
+              <a href="#">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">FAQ</a>
+            </li>-->
+        </ul>
+    </div>
+</footer>
+</body>
+<!-- Custom scripts for this template -->
+<script src="js/new-age.js"></script>
+<script src="js/weRockIT.js"></script>
+</html>
