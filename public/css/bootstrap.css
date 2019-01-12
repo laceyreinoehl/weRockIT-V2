@@ -165,11 +165,13 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  cursor: pointer;
 }
 
 a:hover {
   color: #0056b3;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 a:not([href]):not([tabindex]) {
@@ -588,6 +590,16 @@ pre code {
 }
 
 .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.spacerRow{
+  height: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -2344,6 +2356,18 @@ fieldset:disabled a.btn {
   border-color: #0062cc;
 }
 
+.btn-teal-on-hover{
+  color: #ffffff;
+  background-color: #00B6AA;
+  border-color: #ffffff;
+}
+
+.btn-teal-on-hover:hover{
+  color: #00B6AA !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
 .btn-primary:focus, .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
@@ -2880,10 +2904,11 @@ fieldset:disabled a.btn {
   font-weight: 400;
   color: #007bff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: #ffffff !important;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;

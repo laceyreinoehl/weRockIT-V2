@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
 }
 
 a {
@@ -17,6 +17,10 @@ a {
 
 a:hover, a:focus {
   color: #fcbd20;
+}
+
+a.nav-link{
+  font-weight: bolder;
 }
 
 hr {
@@ -36,8 +40,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
+  /*font-weight: 200;*/
   letter-spacing: 1px;
 }
 
@@ -45,6 +49,22 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+p.speakerName{
+  margin-bottom: 0;
+  font-weight:bolder;
+}
+
+p.speakerTitle{
+  margin-bottom: 0;
+  font-size: smaller;
+}
+
+p.speakerCompany{
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: smaller;
 }
 
 section {
@@ -61,14 +81,14 @@ section h2 {
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #fdcc52;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -85,7 +105,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -520,7 +540,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn {
   border-radius: 300px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Bebas Neue', 'Montserrat',  'Museo Sans','Droid Serif', 'Brandon Grotesque', 'DIN', 'Arial', serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
