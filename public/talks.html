@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127982154-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-127982154-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Technology conference located in Huntsville Alabama focused on highlighting diversity in the tech industry">
+    <meta name="author" content="Women Who Code Huntsville">
+
+    <title>WeRockIT Technology Conference</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery-easing/jquery.easing.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB07JqijHmGDtlGrR4mxJ7FWpGdKuXqGG4",
+            authDomain: "werockit-conf-website.firebaseapp.com",
+            databaseURL: "https://werockit-conf-website.firebaseio.com",
+            projectId: "werockit-conf-website",
+            storageBucket: "werockit-conf-website.appspot.com",
+            messagingSenderId: "801649081419"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <img src='img/WeRockIT_black.png' height='75' width='auto' class="img-responsive"/>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="venue.html">Venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="speakers.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="talks.html">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="sponsor.html">Sponsor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" target="Eventbrite"
+                       href="https://www.eventbrite.com/e/werockit-developers-conference-registration-53115610220?aff=efbevent">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="volunteer.html">Volunteer</a>
+                </li>
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="codeOfConduct.html">CoC</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead bg-wwc-teal">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-md-12 my-auto mx-auto">
+                <div class="text-center">
+                    <h1 class="display-1">Talks</h1>
+                    <h2>Check out our current lineup of talks!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="bg-wwc-purple" id="">
+    <div class="container h-100">
+        <div class="col-md-12 my-auto mx-auto">
+                <div class="text-center">
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                    <br>
+                    <ul class="list-group list-group-flush" id="myList">
+                        <li class="list-group-item"><b>Architecting presentational and container components in React apps using Redux</b> by <i>Alain Alompo</i></br><small>Tags: front-end · javascript · reactjs · web</small></li>
+                        <li class="list-group-item"><b>FIRST Robotics?  Want to get into Robotics? No Experience required!</b> by <i>Angelina Uno-Antonison</i></br><small>Tags: embedded · robotics · volunteering</small></li>
+                        <li class="list-group-item"><b>Second Career Coders</b> by <i>BJ Burns</i></br><small>Tags: learning · career · community</small></li>
+                        <li class="list-group-item"><b>Google Wants you to get AMP'd - But Should You?</b> by <i>Blakeley Kilgore</i></br><small>Tags: front-end · javascript · mobile · web · accelerated mobile pages · cloud</small></li>
+                        <li class="list-group-item"><b>Engaging the Community with Sincerity, Kindness, and Gratitude</b> by <i>Branden Schwartz</i></br><small>Tags: community · learning · career · leadership</small></li>
+                        <li class="list-group-item"><b>HACKERS, HOOLIGANS, HEISTS, & HISTORY</b> by <i>Brian Contos</i></br><small>Tags: cybersecurity · history</small></li>
+                        <li class="list-group-item"><b>You are (not) a fraud</b> by <i>Harold Schreckengost</i></br><small>Tags: career · imposter syndrome · mental health · community</small></li>
+                        <li class="list-group-item"><b>Mastering the State: Be an Advanced React Developer</b> by <i>Lekha Surasani</i></br><small>Tags: front-end · javascript · reactjs · web</small></li>
+                        <li class="list-group-item"><b>Create a PWA using React: What's a PWA and why is everyone talking about it?</b> by <i>Lekha Surasani</i></br><small>Tags: front-end · javascript · reactjs · web · progressive web app · mobile · workshop</small></li>
+                        <li class="list-group-item"><b>Open Source Robotics: Introduction to Gazebo and ROS</b> by <i>Michael Carroll</i></br><small>Tags: embedded · robotics · c++ · machine learning · ros · open source · python</small></li>
+                        <li class="list-group-item"><b>Jupyter + PixieDust ≈ Magic</b> by <i>va barbosa</i></br><small>Tags: python · jupyter notebooks · data science · visualiation </small></li>
+                        <li class="list-group-item"><b>DevOps: A Love Story</b> by <i>Valarie Regas</i></br><small>Tags: devops · docker · kubernetes · jenkins · cloud</small></li>
+                        <li class="list-group-item"><b>Brain-Robot Interaction & Applying Block-Based Programming to Neurofeedback Application Development</b> by <i>Chris Crawford, PhD.</i></br><small>Tags: embedded · research</small></li>
+                        <li class="list-group-item"><b>Build a successful remote agile team in three easy steps!</b> by <i>Paul Gower</i></br><small>Tags: remote · management · career · agile</small></li>
+                        <li class="list-group-item"><b>Controlling Raspberry Pis With Your Phone Using Python</b> by <i>Pat Viafore</i></br><small>Tags: embedded · python · mobile · ionic</small></li>
+                        <li class="list-group-item"><b>Lies a Developer Told Me</b> by <i>Britni Alexander</i></br><small>Tags: career · leadership · community</small></li>
+                    </ul>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact bg-primary" id="contact">
+    <div class="container">
+        <div class="row">
+            <!--
+                        <div class = "col-md-1 mx-auto"></div>
+            -->
+            <div class="col-md-6 mx-auto">
+                <h2>We
+                    <i class="fa fa-heart"></i>
+                    new friends!</h2>
+                <ul class="list-inline list-social">
+                    <li class="list-inline-item social-twitter">
+                        <a href="https://twitter.com/werockitconf?lang=en" target="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social-facebook">
+                        <a href="https://www.facebook.com/werockitconf" target="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social-instagram">
+                        <a href="https://www.instagram.com/werockitconf/" target="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class = "col-md-4 mx-auto">
+                <div id="amznCharityBanner"><script type="text/javascript">(function() {var iFrame = document.createElement('iframe'); iFrame.style.display = 'none'; iFrame.style.border = "none"; iFrame.width = 310; iFrame.height = 256; iFrame.setAttribute && iFrame.setAttribute('scrolling', 'no'); iFrame.setAttribute('frameborder', '0'); setTimeout(function() {var contents = (iFrame.contentWindow) ? iFrame.contentWindow : (iFrame.contentDocument.document) ? iFrame.contentDocument.document : iFrame.contentDocument; contents.document.open(); contents.document.write(decodeURIComponent("%3Cdiv%20id%3D%22amznCharityBannerInner%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsmile.amazon.com%2Fch%2F82-5453687%22%20target%3D%22_blank%22%3E%3Cdiv%20class%3D%22text%22%20height%3D%22%22%3E%3Cdiv%20class%3D%22support-wrapper%22%3E%3Cdiv%20class%3D%22support%22%20style%3D%22font-size%3A%2025px%3B%20line-height%3A%2028px%3B%20margin-top%3A%2015px%3B%20margin-bottom%3A%2015px%3B%22%3ESupport%20%3Cspan%20id%3D%22charity-name%22%20style%3D%22display%3A%20inline-block%3B%22%3EWerockit%20Conf.%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cp%20class%3D%22when-shop%22%3EWhen%20you%20shop%20at%20%3Cb%3Esmile.amazon.com%2C%3C%2Fb%3E%3C%2Fp%3E%3Cp%20class%3D%22donates%22%3EAmazon%20donates.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cstyle%3E%23amznCharityBannerInner%7Bbackground-image%3Aurl(https%3A%2F%2Fm.media-amazon.com%2Fimages%2FG%2F01%2Fx-locale%2Fpaladin%2Fcharitycentral%2Fbanner-background-image._CB309675353_.png)%3Bwidth%3A300px%3Bheight%3A250px%3Bposition%3Arelative%7D%23amznCharityBannerInner%20a%7Bdisplay%3Ablock%3Bwidth%3A100%25%3Bheight%3A100%25%3Bposition%3Arelative%3Bcolor%3A%23000%3Btext-decoration%3Anone%7D.text%7Bposition%3Aabsolute%3Btop%3A20px%3Bleft%3A15px%3Bright%3A15px%3Bbottom%3A100px%7D.support-wrapper%7Boverflow%3Ahidden%3Bmax-height%3A86px%7D.support%7Bfont-family%3AArial%2Csans%3Bfont-weight%3A700%3Bline-height%3A28px%3Bfont-size%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.when-shop%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.donates%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A21px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D%3C%2Fstyle%3E")); contents.document.close(); iFrame.style.display = 'block';}); document.getElementById('amznCharityBanner').appendChild(iFrame); })(); </script></div>
+            </div>-->
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; WeRockIT Conf 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="codeOfConduct.html">Code of Conduct</a>
+            </li>
+            <!--<li class="list-inline-item">
+              <a href="#">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">FAQ</a>
+            </li>-->
+        </ul>
+    </div>
+</footer>
+
+</body>
+
+<!-- Custom scripts for this template -->
+<script src="js/new-age.js"></script>
+<script src="js/weRockIT.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myList li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+</script>
+</html>
