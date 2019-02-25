@@ -317,24 +317,6 @@
     </div>
 </section>
 
-<!--<section id="platinumSponsors" class="bg-primary">
-    <div class="container">
-        <h2>Platinum Sponsors</h2>
-        <br/>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/yourLogoHere.png" alt="Your Logo Here" class="img-fluid" width="150" height="auto"/>
-            </div>
-            <div class="col-md-4">
-                <img src="img/yourLogoHere.png" alt="Your Logo Here" class="img-fluid" width="150" height="auto"/>
-            </div>
-            <div class="col-md-4">
-                <img src="img/yourLogoHere.png" alt="Your Logo Here" class="img-fluid" width="150" height="auto"/>
-            </div>
-        </div>
-    </div>
-</section>-->
-
 <section id="goldSponsors" class="text-center">
     <div class="container">
         <h2>Platinum &amp; Gold Sponsors</h2>
@@ -440,7 +422,26 @@
         </div>
     </div>
 </section>
-
+<section id="justifyYourTrip" class="bg-wwc-purple">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/letter.png" alt="Justify your trip" class="img-fluid"/>
+            </div>
+            <div class="col-md-8">
+                <h1>Justify Your Trip</h1>
+                <p>Want to attend WeRock IT Conf 2019, but your manager needs a little convincing?
+                    We've put together a letter you can use to explain the benefits and ask for support.
+                    Just fill in the blanks and personalize it.
+                </p>
+                <p>~ See you in Huntsville</p>
+                <button class="btn btn-outline-light btn-xl js-scroll-trigger" data-toggle="modal" data-target="#letter">
+                    Generate Letter
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="contact bg-primary" id="contact">
     <div class="container">
         <h2>We
@@ -473,17 +474,48 @@
             <li class="list-inline-item">
                 <a href="codeOfConduct.html">Code of Conduct</a>
             </li>
-            <!--<li class="list-inline-item">
-              <a href="#">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">FAQ</a>
-            </li>-->
         </ul>
     </div>
 </footer>
+<div class="modal fade" id="letter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCeterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="letterTitle">Justify Your Trip</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Hi [NAME],<br/><br/>
+
+                WeRockIT Conf 2019 is taking place at the Mark C. Smith Conference Center in Huntsville, AL, May 3-4,
+                2019,
+                and I’m hoping to get your approval to go. This is an invaluable opportunity to gain practical
+                insights and hear success stories from technology professionals and executives who are facing challenges
+                similar to ours. This will be particularly beneficial for [PROJECT 1] and [PROJECT 2]. <br/><br/>
+
+                Beyond that, there are hundreds of opportunities to meet one on one with developers and technology
+                professionals from Huntsville and the surrounding areas,
+                attend hands-on workshops, learn about the latest trends in technology, and gain technical knowledge.
+                I especially look forward to learning about [TOPICS INTERESTED IN] – directly from some of the best and
+                brightest in tech – and sharing these insights with our team.<br/><br/>
+
+                I estimate that my attendance at this event will cost [$ HERE] – which includes travel, accommodations,
+                and registration. Let me know if you’re on board and we can work together to plan out pre-event and
+                post-event action items.<br/><br/>
+
+                Looking forward to your thoughts,<br/>
+                [NAME]<br/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-<!-- Custom scripts for this template -->
 <script src="js/new-age.js"></script>
 <script src="js/weRockIT.js"></script>
 </html>
