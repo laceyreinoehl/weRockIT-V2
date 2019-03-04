@@ -1,13 +1,12 @@
 language: node_js
 node_js:
   - "7"
-deploy:
-  provider: firebase
-  token:
-    secure: $FIREBASE_TOKEN
-  project: "werockit-conf-website"
-  message: "Deploy in the name of the moon!!!"
+script:
+  - echo "Deploy in the name of the moon!!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy - project werockit-conf-website - token $FIREBASE_TOKEN
 branches:
   only:
     - master
-    
