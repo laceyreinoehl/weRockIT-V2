@@ -1,6 +1,7 @@
 # safelist
 language: node_js
 node_js:
+  - "node"
   - "7"
 script:
   - echo "Deploy it in the name of the moon!"
