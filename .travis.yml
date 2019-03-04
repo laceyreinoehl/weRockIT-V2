@@ -2,6 +2,7 @@ deploy:
   provider: firebase
   token:
     secure: $FIREBASE_TOKEN
+  project: "werockit-conf-website"
   message: "Deploy in the name of the moon!!!"
 branches:
   only:
